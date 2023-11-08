@@ -1,0 +1,5 @@
+# Restic repository environment
+export RESTIC_REPOSITORY="s3:https://s3.example.com/my-backups"
+export RESTIC_PASSWORD="your-restic-password"
+export AWS_ACCESS_KEY_ID="your-aws-access-key"
+export AWS_SECRET_ACCESS_KEY="your-aws-access-key"
