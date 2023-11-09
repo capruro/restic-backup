@@ -66,6 +66,7 @@ if [ $? -eq 0 ]; then
     log "Backup completed"
 else
     log "Error during backup: $backup_output"
+    exit 1
 fi
 
 # Remove old backups. Enable if your REST server is not in append-only mode.
@@ -82,6 +83,7 @@ if [ $? -eq 0 ]; then
     log "Old backups removed"
 else
     log "Error during forget operation: $forget_output"
+    exit 1
 fi
 
 # reset credentials
